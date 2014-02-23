@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: Vibrate
+Implementation-Version: ${Implementation-Version}
+Vaadin-Package-Version: 1
+Vaadin-Widgetsets: org.vaadin.alump.vibrate.gwt.VibrateWidgetSet
+Vaadin-Addon: ${Vaadin-Addon}
+Implementation-Vendor: ${Implementation-Vendor}

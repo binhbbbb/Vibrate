@@ -1,0 +1,10 @@
+@import "../reindeer/reindeer.scss";
+@include reindeer;
+
+.v-button {
+    min-height: 1cm;
+}
+
+.v-verticallayout {
+    padding: 20px;
+}

@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+vibrate-addon/target/
+vibrate-addon/vibrate-addon.iml
+vibrate-demo/target/
+vibrate-demo/vibrate-demo.iml
+vibrate-demo/src/main/webapp/VAADIN/widgetsets/
+vibrate-demo/src/main/webapp/VAADIN/gwt-unitCache/
