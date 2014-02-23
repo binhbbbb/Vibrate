@@ -54,4 +54,4 @@ Then construct demo package (this should automatically compile widgetset)
 > cd ../vibrate-demo
 > mvn package
 
-War package can be now found at vibrate-demo/target/Vibrate.war
+War package can be now found at vibrate-demo/target/VibrateDemo.war

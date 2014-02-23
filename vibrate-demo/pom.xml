@@ -10,7 +10,7 @@
 	<version>${vibrate.version}</version>
 
     <properties>
-        <vibrate.version>0.0.1-SNAPSHOT</vibrate.version>
+        <vibrate.version>0.1.0</vibrate.version>
         <Implementation-Version>${project.version}</Implementation-Version>
 		
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,12 +98,12 @@
             <artifactId>fancylayouts-addon</artifactId>
             <version>1.0.1</version>
         </dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>provided</scope>
-		</dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
 	</dependencies>
 
 	<build>
@@ -136,9 +136,9 @@
 					<noServer>true</noServer>
 					<runTarget>http://localhost:8080/vibrate</runTarget>
 					<port>8080</port>
-					<draftCompile>true</draftCompile>
+					<draftCompile>false</draftCompile>
 					<!-- <style>OBF</style> -->
-					<style>PRETTY</style>
+					<style>OBF</style>
 					<force>true</force>
 					<strict>true</strict>
 					<compileReport>false</compileReport>
@@ -182,7 +182,7 @@
 							<Vaadin-Widgetsets>org.vaadin.alump.vibrate.gwt.demo.VibrateDemoWidgetSet</Vaadin-Widgetsets>
 						</manifestEntries>
 					</archive>
-					<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+					<!--<webXml>src/main/webapp/WEB-INF/web.xml</webXml>-->
 					<warName>VibrateDemo</warName>
 				</configuration>
 			</plugin>
@@ -207,7 +207,7 @@
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>7.5.0.v20110901</version>
+                <version>8.1.13.v20130916</version>
                 <configuration>
                     <stopPort>9966</stopPort>
                     <stopKey>vibrate</stopKey>

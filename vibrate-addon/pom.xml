@@ -27,7 +27,7 @@
 	</developers>
 
 	<properties>
-	    <vibrate.version>0.0.1-SNAPSHOT</vibrate.version>
+	    <vibrate.version>0.1.0</vibrate.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- May be overridden by the build system -->
