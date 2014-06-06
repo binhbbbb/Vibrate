@@ -5,7 +5,7 @@
 	<artifactId>vibrate-addon</artifactId>
 	<packaging>jar</packaging>
 	<name>Vibrate addon</name>
-	<version>${vibrate.version}</version>
+	<version>0.2.0-SNAPSHOT</version>
 
     <description>Vibrate Vaadin 7 addon</description>
 
@@ -27,13 +27,12 @@
 	</developers>
 
 	<properties>
-	    <vibrate.version>0.1.0</vibrate.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- May be overridden by the build system -->
 		<license.short.name>apache2</license.short.name>
-		<vaadin.version>7.1.11</vaadin.version>
-		<vaadin.plugin.version>7.1.11</vaadin.plugin.version>
+		<vaadin.version>7.2.2</vaadin.version>
+		<vaadin.plugin.version>7.2.2</vaadin.plugin.version>
 
 		<Implementation-Version>${project.version}</Implementation-Version>
 		<!-- Must not change this because of the Directory -->
@@ -241,7 +240,6 @@
 								<Implementation-Title>Vibrate documentation</Implementation-Title>
 							</manifestEntries>
 						</archive>
-						<sourceEncoding>UTF-8</sourceEncoding>
 						<links>
 							<link>http://docs.oracle.com/javase/6/docs/api/</link>
 							<link>https://vaadin.com/api/</link>

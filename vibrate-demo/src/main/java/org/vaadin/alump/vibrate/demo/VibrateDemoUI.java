@@ -20,7 +20,9 @@ package org.vaadin.alump.vibrate.demo;
 
 import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
+import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
@@ -29,10 +31,17 @@ import org.vaadin.alump.fancylayouts.FancyNotifications;
 import org.vaadin.alump.vibrate.Vibrate;
 import com.vaadin.annotations.Title;
 
+import javax.servlet.annotation.WebServlet;
+
 @Title("Vibrate Demo")
 @Theme("demo")
 @Push
 public class VibrateDemoUI extends UI {
+
+    @WebServlet(value = "/*")
+    @VaadinServletConfiguration(productionMode = false, ui = VibrateDemoUI.class, widgetset = "org.vaadin.alump.vibrate.demo.gwt.VibrateDemoWidgetSet")
+    public static class FancyLayoutsUIServlet extends VaadinServlet {
+    }
 
     private FancyNotifications notifications;
 
